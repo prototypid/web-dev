@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav, footer {
+    flex-shrink: 0;
+}
+
+section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 20px;
+    margin: 10px;
+}
+
+#logo {
+    width: 80vw;
+    height: 200px;
+    background: red;
+}
+
+.layer {
+    background: grey;
+    padding: 20px 10px;
+}
