@@ -53,7 +53,7 @@ Important points:
 
 ### Layouts
 **Flexbox**
-```html
+```css
 .flex-layout {
     display:flex;
     flex-direction: column;
@@ -241,4 +241,77 @@ nav ul li {
 * `position: absolute` takes body as parent if no parent with `position: relative` is passed.
 * `position: fixed` fixes the element to the body.
 * `position: sticky; top: 0px`
- 
+
+
+## React
+
+With HTML, CSS and JS these are three static files. We can create files respectively and include them into one another. But with react there is a build process in between to convert the code you are writing into something that browser can understand.
+
+In order to make JS compatible from what we're writing to what browser sees, we need a build process.
+
+Creating a react app.
+`npx create-react-app name`
+
+
+## Tailwind
+
+Tailwind from 3.0 is JIT (Just In Time compiled).
+```html
+<script src="https://cdn.tailwindcss.com"></script>
+<h1 class="bg-gray-800 text-white p-2 m-2 shadow">Hello World</h1>
+```
+
+**Why rems and not px**
+This is because rems are more customizable then px. 1rem = 16px.
+
+**Responsive design classes**
+A lot of metadata to the existing classes is attached using columns.sm:
+
+**flexbox**
+```html
+<div class="flex">
+    <div class="h-40 bg-neutral-500 flex-1"></div>
+    <div class="h-40 bg-red-600 flex-1"></div>
+    <div class="h-40 bg-lime-500 flex-1"></div>
+</div>
+
+<div class="flex flex-col sm:flex-row">
+	<div class="h-40 bg-neutral-500 sm:flex-1"></div>
+	<div class="h-40 bg-red-600 sm:flex-1"></div>
+	<div class="h-40 bg-lime-500 sm:flex-1"></div>
+</div>
+```
+
+**grid**
+```html
+<div class="grid grid-cols-3 gap-1">
+		<div class="h-40 w-full bg-neutral-500"></div>
+		<div class="h-40 w-full bg-red-600"></div>
+		<div class="h-40 w-full bg-lime-500"></div>
+
+		<div class="h-40 wfull bg-neutral-500"></div>
+		<div class="h-40 w-full bg-red-600"></div>
+		<div class="h-40 w-full bg-lime-500"></div>
+
+		<div class="h-40 w-full bg-neutral-500"></div>
+		<div class="h-40 w-full bg-red-600"></div>
+		<div class="h-40 w-full bg-lime-500"></div>
+</div>
+
+<!--  -->
+<div class="grid grid-cols-3 gap-1">
+      <div class="h-40 w-full bg-neutral-500"></div>
+      <div class="h-40 w-full bg-red-600"></div>
+      <div class="h-40 w-full bg-lime-500"></div>
+
+      <div class="h-40 wfull bg-neutral-500"></div>
+      <div class="h-40 w-full col-span-2 bg-red-600"></div>
+      <!-- <div class="h-40 w-full bg-lime-500"></div> -->
+
+      <div class="h-40 w-full bg-neutral-500"></div>
+      <div class="h-40 w-full bg-red-600"></div>
+      <div class="h-40 w-full bg-lime-500"></div>
+    </div>
+<!--  -->
+```
+[Codedamn](https://youtu.be/ZxKM3DCV2kE)
