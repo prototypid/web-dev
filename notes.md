@@ -1,5 +1,7 @@
 # Web Dev
 
+Validator - [w3c](https://validator.w3.org)
+
 ## HTML
 Important points:
 * There are two kinds of tags in HTML:
@@ -50,6 +52,10 @@ Important points:
 
 * CSS tag Based selector
 * changing block element, `display: block/inline`
+* There are 3 ways we can apply css:
+	* External StyleSheets
+	* Internal Stylesheets
+	* Inline CSS
 
 ### Layouts
 **Flexbox**
@@ -315,3 +321,31 @@ A lot of metadata to the existing classes is attached using columns.sm:
 <!--  -->
 ```
 [Codedamn](https://youtu.be/ZxKM3DCV2kE)
+
+
+---
+
+**Pseudo class**
+:hover is known as pseudo class. Pseudo class basically adds extra styles based on certain situations.
+
+
+**Transition**
+`transition: background-color 0.15s, color 1s;` 
+
+**box-shadow**
+`box-shadow: 10px 10px 10px black;` horizontal vertical blur color(rgba) a=opacity
+
+**CSS Specificity**
+
+**CSS Selectors**
+* Element based selectors
+* Class Selectors (starts with .) | class can be used more than once.
+* Id selectors (starts with #) | should only used only once  | ids should be used rarely instead use classes.
+* Group selectors (h1, h2 {})
+* Selecting elements inside elements (p span {})
+* \* Universal selector. Selects everything. (This is also called CSS reset). It selects every element.
+* **Inheritance** - This is when another element inherits the settings or properties from its parent element. Anything related to font, typography is inherited and other things are not inherited. **Form elements do not inherit font settings. We need to tell explicitly tell `font: inherit`.** We can also use html to apply properties that we ues to apply on body. !important.
+
+
+
+
